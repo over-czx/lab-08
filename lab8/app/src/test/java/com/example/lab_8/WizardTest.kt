@@ -49,7 +49,7 @@ class WizardTest {
 
     @Test
     fun train_enoughMana_increasesSpellPowerByOneManaDecreasesByFive() {
-        evilWizard.train()
+        evilWizard.train() // spellPower = 10 + 1 = 11; mana = 30 - 5 = 25
 
         assertEquals(11, evilWizard.spellPower)
         assertEquals(25, evilWizard.mana)
